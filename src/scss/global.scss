@@ -1,0 +1,41 @@
+:root {
+   --background: #ffe5d9;
+
+   --gray-10: #edf2f4;
+   --gray-20: #8d99ae;
+   --gray-30: #718096;
+   --gray-40: #2b2d42;
+   --gray-50: #121212;
+
+   --red-20: #ef233c;
+   --red-30: #d90429;
+
+   --brown: #f0ead2;
+   --brown-20: #a98467;
+   --brown-30: #6c584c;
+   --brown-40: #6e4230;
+   --brown-50: #38160d;
+   --brown-60: #2f0e07;
+   --brown-70: #260701;
+
+   --green-10: #dde5b6;
+   --green-30: #adc178;
+}
+
+* {
+   ::-webkit-scrollbar {
+      width: 8px;
+   }
+   ::-webkit-scrollbar-track {
+      width: 6px;
+      background: #f1f1f1;
+   }
+   ::-webkit-scrollbar-thumb {
+      background: #a0aec0;
+      border-radius: 24px;
+
+      &:hover {
+         background: #718096;
+      }
+   }
+}

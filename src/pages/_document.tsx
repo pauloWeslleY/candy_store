@@ -16,6 +16,8 @@ export default function MyDocument() {
                href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
                rel="stylesheet"
             />
+
+            <link rel="shortcut icon" href="favicon.png" type="image/png" />
          </Head>
          <body>
             <ColorModeScript initialColorMode={THEME.config.initialColorMode} />

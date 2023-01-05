@@ -1,4 +1,5 @@
 import { extendTheme, type ThemeConfig, ChakraTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
 
 //? Include custom option in here... colors, fonts, etc!!
 const config: ThemeConfig = {
@@ -6,22 +7,15 @@ const config: ThemeConfig = {
    useSystemColorMode: false,
 };
 
-const customTheme: Partial<ChakraTheme> = {
-   config: {
-      initialColorMode: "light",
-   },
-}
-
 export const THEME = extendTheme({
    config,
-   customTheme,
    styles: {
-      global: {
-         "body": {
-            bg: "background",
-            color: "gray.800",
+      global: (props: any) => ({
+         body: {
+            bg: mode("background2", "background2")(props),
+            color: "brown.700",
          },
-      },
+      }),
    },
    fonts: {
       heading: `'Dancing Script', cursive`,
@@ -29,8 +23,31 @@ export const THEME = extendTheme({
    },
    colors: {
       background: "var(--background)",
+      background2: "var(--background-200)",
+      brown: {
+         100: "var(--brown-100)",
+         200: "var(--brown-200)",
+         300: "var(--brown-300)",
+         400: "var(--brown-400)",
+         500: "var(--brown-500)",
+         600: "var(--brown-600)",
+         700: "var(--brown-700)",
+      },
+      green: {
+         100: "var(--green-100)",
+         300: "var(--green-300)",
+      },
+      red: {
+         200: "var(--red-200)",
+         300: "var(--red-300)",
+      },
+      gray: {
+         100: "var(--gray-100)",
+         200: "var(--gray-200)",
+         400: "var(--gray-300)",
+         500: "var(--gray-500)",
+      },
    },
-
 });
 
 export default THEME;

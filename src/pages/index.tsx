@@ -1,10 +1,19 @@
-import { Heading } from "@chakra-ui/react";
+import { NavBar } from "../components/NavBar";
+import { HeroHeader } from "../components/HeroHeader";
 
-export default function Home() {
+import Home from "./Home";
+
+export default function MyHome() {
    return (
       <>
-         <Heading>Hello World!</Heading>
+         <header>
+            <HeroHeader title="Rose" label="Gourmet" />
+            <nav>
+               <NavBar />
+            </nav>
+         </header>
+
+         <Home />
       </>
    );
 }
-

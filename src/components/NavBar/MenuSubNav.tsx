@@ -33,6 +33,8 @@ function MenuSubNav({ menu }: MenuSubNavProps) {
                   transition={"all .3s ease"}
                   _groupHover={{ color: "green.300" }}
                   fontWeight={500}
+                  fontFamily={"heading"}
+                  fontSize={"xl"}
                >
                   {label}
                </Text>

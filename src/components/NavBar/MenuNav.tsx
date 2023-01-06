@@ -19,8 +19,9 @@ function MenuNav() {
                      <Link
                         p={2}
                         href={navItem.href ?? "#"}
-                        fontSize={"lg"}
+                        fontSize={"xl"}
                         fontWeight={500}
+                        fontFamily={"heading"}
                         color={"brown.700"}
                         transition={"all 0.5s ease-out"}
                         _hover={{

@@ -1,0 +1,46 @@
+//! <| === Styles Swiper === |>
+.swiper {
+   // padding: 3.5rem !important;
+
+   .swiper-slide {
+      display: flex;
+      justify-content: center;
+
+      .swiper-slide-shadow {
+         background: none;
+      }
+   }
+
+   .swiper-pagination-bullet-active {
+      background-color: var(--brown-700);
+   }
+
+   .swiper-button-next,
+   .swiper-button-prev {
+      background-color: var(--arrow-slider);
+      color: var(--brown-700);
+
+      padding: 2rem;
+      border-radius: 50%;
+
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+         background-color: var(--brown-100);
+         transform: scale(1.1);
+      }
+   }
+}
+
+//! <| === MediaQuery  === |>
+@media only screen and (max-width: 800px) {
+   .swiper {
+      padding-bottom: 32px;
+      padding-top: 32px;
+   }
+
+   .swiper-button-next,
+   .swiper-button-prev {
+      display: none;
+   }
+}

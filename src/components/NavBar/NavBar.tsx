@@ -21,14 +21,11 @@ function NavBar() {
       <Box as={"nav"}>
          <Container maxW={"6xl"}>
             <Flex
-               bg={"brown.200"}
                color={"brown.600"}
                minH={"60px"}
                py={{ base: 2 }}
                px={{ base: 4 }}
                align={"center"}
-               rounded={"lg"}
-               shadow={"md"}
             >
                <Flex
                   flex={{ base: 1, md: "auto" }}

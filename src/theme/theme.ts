@@ -19,7 +19,7 @@ export const THEME = extendTheme({
    },
    fonts: {
       heading: `'Dancing Script', cursive`,
-      body: `'Dancing Script', cursive`,
+      body: `'Lexend', sans-serif`,
    },
    colors: {
       background: "var(--background)",

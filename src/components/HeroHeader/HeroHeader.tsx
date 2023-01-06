@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Flex, Image, chakra, Stack } from "@chakra-ui/react";
+import { Flex, Image, chakra, Stack, Heading } from "@chakra-ui/react";
 
 type HeroHeaderProps = {
    title: string;
@@ -33,14 +33,10 @@ function HeroHeader(props: HeroHeaderProps) {
                   alt={"Logo RosesGourmet"}
                   src={"/images/logo.png"}
                />
-               <chakra.h1
-                  color={"brown.600"}
-                  fontSize={"1.8rem"}
-                  fontWeight={"extrabold"}
-               >
+               <Heading as={"h1"} color={"brown.600"} fontWeight={"extrabold"}>
                   {title}
                   <chakra.span color={"red.200"}>{label}</chakra.span>
-               </chakra.h1>
+               </Heading>
             </Stack>
          </Flex>
       </chakra.header>

@@ -17,14 +17,13 @@ function HasButton(BtnProps: HasButtonProps) {
             fontSize={"xl"}
             border={2}
             borderStyle={"solid"}
-            borderColor={" .600"}
-            rounded={"xl"}
-            color={" .600"}
-            bgGradient={"linear(to-l, green.100, green.300)"}
-            transition={"all 0.3s ease"}
+            borderColor={"brown.600"}
+            color={"brown.600"}
+            bg={"brown.300"}
+            transition={"all 0.5s ease-out"}
             _hover={{
-               bg: "brown.300",
-               transform: "translateY(-2px)",
+               bgGradient: "linear(to-l, green.100, green.300)",
+               transform: "rotate(2deg)",
             }}
             _focus={{
                bg: "red.300",

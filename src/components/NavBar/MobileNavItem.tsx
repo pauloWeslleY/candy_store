@@ -1,9 +1,10 @@
 import { memo } from "react";
+import Link from "next/link";
 import {
    Collapse,
-   Flex,
-   Link,
    Stack,
+   Flex,
+   Box,
    Text,
    Icon,
    useColorModeValue,
@@ -12,11 +13,7 @@ import {
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { NavItemProps } from "./index";
 
-interface Props {}
-
-function MobileNavitem({ label, children, href }: NavItemProps) {
-   // const {} = props
-
+function MobileNavItem({ label, children, href }: NavItemProps) {
    const { isOpen, onToggle } = useDisclosure();
 
    return (
@@ -31,12 +28,7 @@ function MobileNavitem({ label, children, href }: NavItemProps) {
                textDecoration: "none",
             }}
          >
-            <Text
-               fontWeight={600}
-               color={useColorModeValue("gray.600", "gray.200")}
-            >
-               {label}
-            </Text>
+            <Text fontWeight={600}>{label}</Text>
             {children && (
                <Icon
                   as={ChevronDownIcon}
@@ -63,8 +55,8 @@ function MobileNavitem({ label, children, href }: NavItemProps) {
             >
                {children &&
                   children.map((child) => (
-                     <Link key={child.label} py={2} href={child.href}>
-                        {child.label}
+                     <Link key={child.label} href={child.href}>
+                        <Box py={2}>{child.label}</Box>
                      </Link>
                   ))}
             </Stack>
@@ -73,4 +65,4 @@ function MobileNavitem({ label, children, href }: NavItemProps) {
    );
 }
 
-export default memo(MobileNavitem);
+export default memo(MobileNavItem);

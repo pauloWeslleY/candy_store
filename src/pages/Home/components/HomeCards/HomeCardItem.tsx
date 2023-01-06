@@ -20,7 +20,7 @@ function HomeCardItem({ homeCards }: HomeCardItemProps) {
          align={"center"}
          p={2}
          border={"0.215rem solid"}
-         borderColor={"brown.100"}
+         borderColor={"brown.200"}
          transition={"all 0.4s ease-out"}
          _hover={{
             transform: "translateY(-3px)",

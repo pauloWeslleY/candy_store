@@ -2,17 +2,17 @@ import { memo } from "react";
 import {
    Box,
    Flex,
-   Text,
    IconButton,
    Stack,
    Collapse,
    Container,
-   useBreakpointValue,
    useDisclosure,
    Avatar,
+   Divider,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { MenuNav, MobileNav } from "./index";
+import { MenuNav, MobileNav, SocialButton } from "./index";
+import ButtonOrder from "../Buttons/ButtonOrder";
 
 function NavBar() {
    const { isOpen, onToggle } = useDisclosure();
@@ -64,9 +64,20 @@ function NavBar() {
                <Stack
                   flex={{ base: 1, md: 0 }}
                   justify={"flex-end"}
+                  align={"center"}
                   direction={"row"}
                   spacing={6}
-               ></Stack>
+               >
+                  <ButtonOrder name="Pedir Agora" />
+                  <Divider
+                     orientation={"vertical"}
+                     borderColor={"brown.700"}
+                     borderWidth={"1px"}
+                     h={"2rem"}
+                  />
+
+                  <SocialButton />
+               </Stack>
             </Flex>
          </Container>
 

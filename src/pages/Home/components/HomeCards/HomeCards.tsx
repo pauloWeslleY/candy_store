@@ -14,13 +14,13 @@ function HomeCards(props: HomeCardsProps) {
 
    return (
       <>
-         <Box mt={5} mb={10} as={"section"}>
+         <Box as={"section"} mt={5} mb={10} p={6}>
             <Container maxW={"6xl"}>
                <Flex justify={"center"} mt={10} mb={4}>
                   <Heading size={"2xl"}>{title}</Heading>
                </Flex>
 
-               <Flex gap={3} flexWrap={"wrap"} justify={"center"} mb={8}>
+               <Flex gap={4} flexWrap={"wrap"} justify={"center"} mb={14}>
                   {HOME_CARDS.map((card, index) => (
                      <HomeCardItem key={index} homeCards={card} />
                   ))}

@@ -1,11 +1,13 @@
 import { memo } from "react";
+import Link from "next/link";
 import {
    Stack,
    Box,
-   Link,
+   // Link,
    Popover,
    PopoverContent,
    PopoverTrigger,
+   Button,
 } from "@chakra-ui/react";
 import { MenuSubNav, NAV_ITEMS } from "./index";
 
@@ -16,20 +18,23 @@ function MenuNav() {
             <Box key={navItem.label}>
                <Popover trigger={"hover"} placement={"bottom-start"}>
                   <PopoverTrigger>
-                     <Link
-                        p={2}
-                        href={navItem.href ?? "#"}
-                        fontSize={"xl"}
-                        fontWeight={500}
-                        fontFamily={"heading"}
-                        color={"brown.700"}
-                        transition={"all 0.5s ease-out"}
-                        _hover={{
-                           textDecoration: "none",
-                           color: "green.100",
-                        }}
-                     >
-                        {navItem.label}
+                     <Link href={navItem.href ?? "#"}>
+                        <Button
+                           p={2}
+                           fontSize={"xl"}
+                           fontWeight={500}
+                           fontFamily={"heading"}
+                           bg={"none"}
+                           color={"brown.700"}
+                           transition={"all 0.5s ease-out"}
+                           _hover={{
+                              textDecoration: "none",
+                              color: "green.100",
+                              transform: "translateY(-2px)",
+                           }}
+                        >
+                           {navItem.label}
+                        </Button>
                      </Link>
                   </PopoverTrigger>
 

@@ -1,22 +1,20 @@
 import Home from "./Home";
 
+import PageHead from "./Head";
+
 import { NavBar } from "../components/NavBar";
-import { HeroHeader } from "../components/HeroHeader";
 
 import styles from "../scss/app.module.scss";
-import Footer from "../components/Footer/Footer";
 
 export default function MyHome() {
    return (
       <main className={styles.hero__banner}>
-         <header>
-            <HeroHeader title="Rose" label="Gourmet" />
+         <PageHead title="Home" description="Pagina Principal" />
+         <nav>
             <NavBar />
-         </header>
+         </nav>
 
          <Home />
-
-         <Footer />
       </main>
    );
 }

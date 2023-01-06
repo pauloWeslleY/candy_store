@@ -3,7 +3,7 @@ import { NavItemProps } from '../../../types/NavItemProps'
 export const NAV_ITEMS: Array<NavItemProps> = [
    {
       label: "Home",
-      href: "#",
+      href: "/",
    },
    {
       label: "A Confeitaria",
@@ -11,7 +11,7 @@ export const NAV_ITEMS: Array<NavItemProps> = [
          {
             label: "Nossa Historia",
             subLabel: "Trending Design to inspire you",
-            href: "#",
+            href: "/history",
          },
          {
             label: "Contatos",
@@ -52,6 +52,6 @@ export const NAV_ITEMS: Array<NavItemProps> = [
    },
    {
       label: "Tortas",
-      href: "#",
+      href: "/pies",
    },
 ];

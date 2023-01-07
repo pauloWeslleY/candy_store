@@ -2,7 +2,7 @@ import { memo } from "react";
 import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import { AddIcon } from "@chakra-ui/icons";
 
-import { HomeCardItem, HasButton, HOME_CARDS } from "./index";
+import { HomeCardItem, HasButton, HOME_CARDS, HeroTitle } from "./index";
 
 type HomeCardsProps = {
    title: string;
@@ -24,19 +24,17 @@ function HomeCards(props: HomeCardsProps) {
                   mt={10}
                   mb={8}
                >
-                  <Heading as={"h2"} size={"2xl"}>
-                     {title}
-                  </Heading>
-                  <Text as={"h3"} fontSize={"4xl"} letterSpacing={"widest"}>
-                     {subtitle}
-                  </Text>
+                  <HeroTitle title={title} subtitle={subtitle} />
                </Flex>
 
                <Flex gap={4} flexWrap={"wrap"} justify={"center"} mb={14}>
                   {HOME_CARDS.map((card, index) => (
                      <HomeCardItem key={index} homeCards={card} />
                   ))}
-                  <HasButton name="Todos os Produtos" icon={<AddIcon />} />
+                  <HasButton
+                     name="Conheça Nossos Produtos"
+                     icon={<AddIcon />}
+                  />
                </Flex>
             </Container>
          </Box>

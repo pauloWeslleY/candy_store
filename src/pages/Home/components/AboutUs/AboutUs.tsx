@@ -26,7 +26,10 @@ function AboutUs(AboutProps: AboutUsProps) {
             <Container maxW={"6xl"}>
                <Grid
                   {...props}
-                  templateColumns={"repeat(12, 1fr)"}
+                  templateColumns={{
+                     base: "repeat(1, 1fr)",
+                     lg: "repeat(12, 1fr)",
+                  }}
                   my={10}
                   gap={8}
                >

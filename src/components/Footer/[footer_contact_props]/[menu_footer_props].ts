@@ -14,8 +14,8 @@ export const MENU_FOOTER: Array<MenuFooterProps> = [
       href: "/history",
    },
    {
-      label: "Tortas",
-      href: "/pies",
+      label: "Blog",
+      href: "/blog",
    },
    {
       label: "Contatos",

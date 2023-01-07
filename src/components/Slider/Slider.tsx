@@ -9,7 +9,9 @@ import {
    EffectFade,
    EffectCards,
    EffectCreative,
+   EffectCoverflow,
    Parallax,
+   Keyboard,
 } from "swiper";
 
 import "swiper/scss";
@@ -19,7 +21,8 @@ import "swiper/scss/autoplay";
 import "swiper/scss/free-mode";
 import "swiper/scss/effect-fade";
 import "swiper/scss/effect-cards";
-import "swiper/css/effect-creative";
+import "swiper/scss/effect-creative";
+import "swiper/scss/effect-coverflow";
 
 interface SliderProps {
    settings: SwiperProps;
@@ -39,8 +42,10 @@ export function SliderCarousel({ settings, children, css }: SliderProps) {
             FreeMode,
             EffectFade,
             EffectCards,
+            EffectCoverflow,
             EffectCreative,
             Parallax,
+            Keyboard,
          ]}
          {...settings}
       >

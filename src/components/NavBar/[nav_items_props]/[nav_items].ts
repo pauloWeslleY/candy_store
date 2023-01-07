@@ -11,7 +11,7 @@ export const NAV_ITEMS: Array<NavItemProps> = [
       children: [
          {
             label: "Nossa Historia",
-            subLabel: "Trending Design to inspire you",
+            subLabel: "Venha Conhece Nossa Historia",
             href: "/history",
          },
          {
@@ -49,10 +49,15 @@ export const NAV_ITEMS: Array<NavItemProps> = [
             subLabel: "An exclusive list for contract work",
             href: "#",
          },
+         {
+            label: "Tortas",
+            subLabel: "An exclusive list for contract work",
+            href: "/pies",
+         },
       ],
    },
    {
-      label: "Tortas",
-      href: "/pies",
+      label: "Blog",
+      href: "/blog",
    },
 ];

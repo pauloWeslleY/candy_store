@@ -1,19 +1,8 @@
 import { memo } from "react";
-import {
-   Container,
-   Flex,
-   Grid,
-   GridItem,
-   Heading,
-   Text,
-} from "@chakra-ui/react";
-import { HeroHistoryImage } from "./index";
+import { Container, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import { HeroHistoryImage, HeroTitle } from "./index";
 
-interface Props {}
-
-function HeroInfoHistory(props: Props) {
-   const {} = props;
-
+function HeroInfoHistory() {
    return (
       <>
          <Container maxW={"6xl"}>
@@ -28,13 +17,7 @@ function HeroInfoHistory(props: Props) {
             >
                <GridItem colSpan={6} placeSelf={"center"}>
                   <Flex flexDir={"column"} align={"center"}>
-                     <Heading as={"h2"} size={"2xl"}>
-                        {"title"}
-                     </Heading>
-
-                     <Text as={"h3"} fontSize={"4xl"} letterSpacing={"widest"}>
-                        {"subtitle"}
-                     </Text>
+                     <HeroTitle title="History" subtitle="The Confectionery" />
 
                      <Text as={"p"} textAlign={"center"}>
                         {`

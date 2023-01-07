@@ -1,7 +1,10 @@
 import OurStory from "./OurStory";
 
+import { HeroTitle } from "../../../../components/HeroTitle";
+import { StoryCarousel } from "../StoryCarousel";
+
 import { CAROUSEL_ITEM } from "../StoryCarousel/";
 import { SectionProps } from "../../../../types/SectionProps";
 
-export { OurStory, CAROUSEL_ITEM };
+export { OurStory, HeroTitle, StoryCarousel, CAROUSEL_ITEM };
 export type { SectionProps };

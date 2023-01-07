@@ -9,7 +9,7 @@ export default function PageHead({ title, description }: PageHeadProps) {
    return (
       <>
          <Head>
-            <title>RoseGourmet | {title}</title>
+            <title>{`RoseGourmet | ${title}`}</title>
             <meta
                name="viewport"
                content="width=device-width, initial-scale=1"

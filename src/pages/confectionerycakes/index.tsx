@@ -1,4 +1,6 @@
 import PageHead from "../Head";
+import ConfectioneryCakesPage from "./ConfectioneryCakes";
+
 import { NavBar } from "../../components/NavBar";
 
 export default function ConfectioneryCakes() {
@@ -9,7 +11,7 @@ export default function ConfectioneryCakes() {
             <NavBar />
          </nav>
 
-         <h1>ConfectioneryCakes</h1>
+         <ConfectioneryCakesPage />
       </>
    );
 }

@@ -8,7 +8,7 @@ import { HeroHeader } from "../components/HeroHeader";
 import { Footer } from "../components/Footer";
 import { BackToTopButton } from "../components/BackToTopButton";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
    return (
       <ChakraProvider theme={THEME}>
          <HeroHeader title="Rose" label="Gourmet" />
@@ -21,4 +21,4 @@ function MyApp({ Component, pageProps }: AppProps) {
    );
 }
 
-export default MyApp;
+export default App;

@@ -14,7 +14,7 @@ function HasButton(BtnProps: HasButtonProps) {
          <Button
             {...props}
             rightIcon={icon}
-            fontSize={"xl"}
+            fontSize={"md"}
             border={2}
             borderStyle={"solid"}
             borderColor={"brown.600"}

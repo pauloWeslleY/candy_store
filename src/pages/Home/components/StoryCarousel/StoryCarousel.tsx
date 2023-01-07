@@ -12,14 +12,6 @@ interface StoryCarouselCreativeProps {
 }
 
 function StoryCarouselCreative({ slide }: StoryCarouselCreativeProps) {
-   if (slide.length === 1) {
-      return (
-         <Center>
-            <StoryCarouselItem carouselItem={slide[0]} />
-         </Center>
-      );
-   }
-
    const settings: SliderProps = {
       grabCursor: true,
       loop: true,
@@ -31,6 +23,14 @@ function StoryCarouselCreative({ slide }: StoryCarouselCreativeProps) {
          dynamicBullets: true,
       },
    };
+
+   if (slide.length === 1) {
+      return (
+         <Center>
+            <StoryCarouselItem carouselItem={slide[0]} />
+         </Center>
+      );
+   }
 
    return (
       <SliderCarousel settings={settings}>

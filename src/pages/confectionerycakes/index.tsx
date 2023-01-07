@@ -1,17 +1,15 @@
 import PageHead from "../Head";
-import HistoryPage from "./History";
-
 import { NavBar } from "../../components/NavBar";
 
-export default function History() {
+export default function ConfectioneryCakes() {
    return (
       <>
-         <PageHead title="Nossa Historia" description="Pagina Principal" />
+         <PageHead title="Bolos Confeitados" description="Pagina Principal" />
          <nav>
             <NavBar />
          </nav>
 
-         <HistoryPage />
+         <h1>ConfectioneryCakes</h1>
       </>
    );
 }

@@ -1,11 +1,7 @@
 import { memo } from "react";
 import { Text, VStack, chakra, Divider } from "@chakra-ui/react";
 
-interface Props {}
-
-function FooterBar(props: Props) {
-   const {} = props;
-
+function FooterBar() {
    return (
       <VStack py={3}>
          <Divider borderColor={"red.300"} maxW={"sm"} />

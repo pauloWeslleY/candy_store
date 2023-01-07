@@ -1,8 +1,8 @@
 import { memo } from "react";
+import Link from "next/link";
 import {
    Box,
    Container,
-   Link,
    SimpleGrid,
    Stack,
    Text,
@@ -13,7 +13,7 @@ import {
    Flex,
 } from "@chakra-ui/react";
 import { SocialButtonIcons, FooterContact } from "./index";
-import FooterBar from "./FooterBar";
+import { FooterBar, MENU_FOOTER } from "./index";
 
 const ListHeader = ({ title }: { title: string }) => (
    <Text as={"h3"} fontWeight={"500"} fontSize={"lg"} mb={2}>
@@ -27,13 +27,6 @@ function Footer() {
       "Terms of Service",
       "Legal",
       "Privacy Policy",
-   ];
-
-   const MENU_LIST: string[] = [
-      "Home",
-      "Nossa Confeitaria",
-      "Tortas",
-      "Contatos",
    ];
 
    return (
@@ -72,9 +65,9 @@ function Footer() {
                   </Stack>
                   <Stack align={"flex-start"}>
                      <ListHeader title="Company" />
-                     {MENU_LIST.map((props, index) => (
-                        <Link key={index} href={"#"}>
-                           {props}
+                     {MENU_FOOTER.map((props, index) => (
+                        <Link key={index} href={props.href}>
+                           {props.label}
                         </Link>
                      ))}
                   </Stack>

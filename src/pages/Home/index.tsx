@@ -40,7 +40,7 @@ export default function Home() {
    };
 
    return (
-      <>
+      <main>
          <section>
             <BannerHome
                title="All your"
@@ -51,13 +51,18 @@ export default function Home() {
                   your users to vote on features, publish roadmap, and complete
                   your customer feedback loop.
                `}
+               id={"HomeCards"}
             />
          </section>
 
          <DividerLine />
 
          <section>
-            <HomeCards title="Produtos" />
+            <HomeCards
+               title="Produtos"
+               subtitle="Candys&Cakes"
+               id={"HomeCards"}
+            />
             <OurStory
                title="History"
                subtitle="Our Story"
@@ -90,6 +95,6 @@ export default function Home() {
                image={"/images/logo1.jpg"}
             />
          </section>
-      </>
+      </main>
    );
 }

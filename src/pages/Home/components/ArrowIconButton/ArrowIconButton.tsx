@@ -1,6 +1,6 @@
 import { memo } from "react";
-import { ArrowDownIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
+import { ArrowDownIcon } from "@chakra-ui/icons";
 
 import styles from "./styles.module.scss";
 

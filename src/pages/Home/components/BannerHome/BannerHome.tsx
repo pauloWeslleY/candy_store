@@ -1,16 +1,18 @@
 import { memo } from "react";
 import { Text, chakra, Container, Stack, Flex } from "@chakra-ui/react";
 import { ArrowIconButton } from "../ArrowIconButton";
+import { Link } from "react-scroll";
 
 type BannerHomeProps = {
    title: string;
    label: string;
    subLabel: string;
    subtitle: string;
+   id: string;
 };
 
 function BannerHome(BannerProps: BannerHomeProps) {
-   const { title, subtitle, label, subLabel } = BannerProps;
+   const { title, subtitle, label, subLabel, id } = BannerProps;
 
    return (
       <>
@@ -65,7 +67,15 @@ function BannerHome(BannerProps: BannerHomeProps) {
                   {subtitle}
                </chakra.p>
                <Flex justify={"center"}>
-                  <ArrowIconButton />
+                  <Link
+                     to={id}
+                     smooth={true}
+                     offset={-30}
+                     duration={500}
+                     delay={1000}
+                  >
+                     <ArrowIconButton />
+                  </Link>
                </Flex>
             </Stack>
          </Container>

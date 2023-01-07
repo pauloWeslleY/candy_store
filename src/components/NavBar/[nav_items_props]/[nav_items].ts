@@ -1,5 +1,6 @@
 import { NavItemProps } from '../../../types/NavItemProps'
 
+// [] PagesLinks
 export const NAV_ITEMS: Array<NavItemProps> = [
    {
       label: "Home",
@@ -15,8 +16,8 @@ export const NAV_ITEMS: Array<NavItemProps> = [
          },
          {
             label: "Contatos",
-            subLabel: "Up-and-coming Designers",
-            href: "#",
+            subLabel: "Entre em contato conosco",
+            href: "/contact",
          },
       ],
    },
@@ -26,12 +27,12 @@ export const NAV_ITEMS: Array<NavItemProps> = [
          {
             label: "Bolos Confeitados",
             subLabel: "Find your dream design job",
-            href: "#",
+            href: "/confectionerycakes",
          },
          {
             label: "Bolos Tradicionais",
             subLabel: "An exclusive list for contract work",
-            href: "#",
+            href: "/traditionalcakes",
          },
       ],
    },

@@ -5,7 +5,7 @@ const DividerLine = () => (
    <>
       <Divider
          borderColor={"red.300"}
-         borderWidth={"0.2rem"}
+         borderWidth={"2px"}
          maxW={{ base: "15rem", lg: "35rem" }}
          mx={"auto"}
       />

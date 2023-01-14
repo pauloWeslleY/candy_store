@@ -1,8 +1,10 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
+import { HeroTitle } from "../../components/HeroTitle";
 import {
    BannerCarouselCoverFlow,
    BANNER_CAROUSEL_ITEM,
 } from "./components/BannerCarousel/index";
+import { MenuCakesConfectionery } from "./components/MenuCakesConfectionery";
 
 export default function ConfectioneryCakesPage() {
    return (
@@ -16,6 +18,16 @@ export default function ConfectioneryCakesPage() {
                </Container>
             </Box>
          </header>
+
+         <section>
+            <Box mt={12}>
+               <HeroTitle title="Daily Menu" subtitle="Bolos Confeitados" />
+            </Box>
+
+            <Box>
+               <MenuCakesConfectionery />
+            </Box>
+         </section>
       </main>
    );
 }

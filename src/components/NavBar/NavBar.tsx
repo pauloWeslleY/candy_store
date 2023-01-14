@@ -18,7 +18,7 @@ function NavBar() {
    const { isOpen, onToggle } = useDisclosure();
 
    return (
-      <Box as={"nav"}>
+      <Box>
          <Container maxW={"6xl"}>
             <Flex
                color={"brown.600"}

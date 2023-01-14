@@ -74,9 +74,9 @@ export default function Home() {
                   maiores?
                `}
             />
-            <Divider borderColor={"red.300"} />
+            {/* <Divider borderColor={"red.300"} />
             {PARALLAX_ITEM && <ParallaxSlider parallax={PARALLAX_ITEM} />}
-            <Divider borderColor={"red.300"} />
+            <Divider borderColor={"red.300"} /> */}
 
             <HeroHome
                contentOne={content.contentOne}

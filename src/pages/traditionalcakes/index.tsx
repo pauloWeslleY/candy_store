@@ -1,4 +1,6 @@
 import PageHead from "../Head";
+import TraditionalCakesPages from "./TraditionalCakes";
+
 import { NavBar } from "../../components/NavBar";
 
 export default function TraditionalCakes() {
@@ -9,7 +11,7 @@ export default function TraditionalCakes() {
             <NavBar />
          </nav>
 
-         <h1>TraditionalCakes</h1>
+         <TraditionalCakesPages />
       </>
    );
 }

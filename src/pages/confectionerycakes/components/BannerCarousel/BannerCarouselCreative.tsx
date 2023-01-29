@@ -5,18 +5,17 @@ import {
    Slide,
    SliderProps,
 } from "../../../../components/Slider";
-import { BannerCarouselCoverFlowItem, CarouselProps } from "./index";
+import { BannerCarouselCreativeItem, CarouselProps } from "./index";
 
 interface BannerCarouselCoverFlowProps {
    carousel: CarouselProps[];
 }
 
-function BannerCarouselCoverFlow({ carousel }: BannerCarouselCoverFlowProps) {
+function BannerCarouselCreative({ carousel }: BannerCarouselCoverFlowProps) {
    const settings: SliderProps = {
       grabCursor: true,
       loop: true,
       centeredSlides: true,
-      slidesPerView: 2,
       autoplay: {
          delay: 5000,
       },
@@ -26,20 +25,25 @@ function BannerCarouselCoverFlow({ carousel }: BannerCarouselCoverFlowProps) {
       keyboard: {
          enabled: true,
       },
-      effect: "coverflow",
-      coverflowEffect: {
-         rotate: 50,
-         stretch: 0,
-         depth: 100,
-         modifier: 1,
-         slideShadows: false,
+      effect: "creative",
+      creativeEffect: {
+         prev: {
+            shadow: true,
+            translate: ["-125%", 0, -800],
+            rotate: [0, 0, -90],
+         },
+         next: {
+            shadow: true,
+            translate: ["125%", 0, -800],
+            rotate: [0, 0, 90],
+         },
       },
    };
 
    if (carousel.length === 1) {
       return (
          <Center>
-            <BannerCarouselCoverFlowItem carouselInner={carousel[0]} />
+            <BannerCarouselCreativeItem carouselInner={carousel[0]} />
          </Center>
       );
    }
@@ -48,11 +52,11 @@ function BannerCarouselCoverFlow({ carousel }: BannerCarouselCoverFlowProps) {
       <SliderCarousel settings={settings}>
          {carousel.map((props, index) => (
             <Slide key={index}>
-               <BannerCarouselCoverFlowItem carouselInner={props} />
+               <BannerCarouselCreativeItem carouselInner={props} />
             </Slide>
          ))}
       </SliderCarousel>
    );
 }
 
-export default memo(BannerCarouselCoverFlow);
+export default memo(BannerCarouselCreative);

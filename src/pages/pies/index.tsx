@@ -1,6 +1,8 @@
 import PageHead from "../Head";
 import { NavBar } from "../../components/NavBar";
 
+import PagePies from "./Pies";
+
 export default function Pies() {
    return (
       <>
@@ -10,7 +12,7 @@ export default function Pies() {
             <NavBar />
          </nav>
 
-         <h1>Pies</h1>
+         <PagePies />
       </>
    );
 }

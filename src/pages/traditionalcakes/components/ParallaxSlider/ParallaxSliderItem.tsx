@@ -16,8 +16,8 @@ function ParallaxSliderItem({ item }: ParallaxSliderItemProps) {
          flexDir={"column"}
          textAlign={"center"}
          maxW={"2xl"}
-         color={"brown.700"}
-         textShadow={"var(--green-100) 1px 0 10px"}
+         color={"gray.300"}
+         textShadow={"var(--green-300) 1px 0 10px"}
       >
          <Heading as={"h4"} data-swiper-parallax="-300">
             {title}

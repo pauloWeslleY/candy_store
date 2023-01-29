@@ -23,6 +23,9 @@ function ParallaxSlider({ parallax }: ParallaxSliderProps) {
       autoplay: {
          delay: 2000,
       },
+      keyboard: {
+         enabled: true,
+      },
    };
 
    return (
@@ -31,7 +34,7 @@ function ParallaxSlider({ parallax }: ParallaxSliderProps) {
             slot="container-start"
             className={styles.parallax__bg}
             style={{
-               backgroundImage: "url(/images/bn5.jpg)",
+               backgroundImage: "url(/images/bn3.jpg)",
             }}
             data-swiper-parallax="-23%"
          ></div>

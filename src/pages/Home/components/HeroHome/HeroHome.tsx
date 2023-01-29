@@ -49,6 +49,7 @@ function HeroHome(HeroHomeProps: HeroHomeProps) {
                         alt={""}
                         fit={"cover"}
                         boxSize={"45rem"}
+                        rounded={"xl"}
                      />
                   </Flex>
                </GridItem>
@@ -59,6 +60,7 @@ function HeroHome(HeroHomeProps: HeroHomeProps) {
                         alt={""}
                         fit={"cover"}
                         boxSize={"45rem"}
+                        rounded={"xl"}
                      />
 
                      <Text as={"h3"} fontSize={"2xl"}>

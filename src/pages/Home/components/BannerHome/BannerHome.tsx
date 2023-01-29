@@ -53,11 +53,11 @@ function BannerHome(BannerProps: BannerHomeProps) {
                   {label}
                </chakra.h1>
                <chakra.p
+                  mb={6}
                   px={{
                      base: 0,
                      lg: 24,
                   }}
-                  mb={6}
                   fontSize={{
                      base: "lg",
                      md: "xl",

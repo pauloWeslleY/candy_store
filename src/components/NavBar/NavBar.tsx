@@ -1,6 +1,5 @@
 import { memo } from "react";
 import {
-   Box,
    Flex,
    IconButton,
    Stack,
@@ -18,7 +17,7 @@ function NavBar() {
    const { isOpen, onToggle } = useDisclosure();
 
    return (
-      <Box>
+      <>
          <Container maxW={"6xl"}>
             <Flex
                color={"brown.600"}
@@ -84,7 +83,7 @@ function NavBar() {
          <Collapse in={isOpen} animateOpacity>
             <MobileNav />
          </Collapse>
-      </Box>
+      </>
    );
 }
 

@@ -12,9 +12,7 @@ interface CarouselCoverFlowProps {
    carouselInner: CarouselProps;
 }
 
-function BannerCarouselCoverFlowItem({
-   carouselInner,
-}: CarouselCoverFlowProps) {
+function BannerCarouselCreativeItem({ carouselInner }: CarouselCoverFlowProps) {
    const { title, image } = carouselInner;
 
    const font = useBreakpointValue({ base: "3xl", md: "3xl" });
@@ -55,4 +53,4 @@ function BannerCarouselCoverFlowItem({
    );
 }
 
-export default memo(BannerCarouselCoverFlowItem);
+export default memo(BannerCarouselCreativeItem);

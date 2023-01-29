@@ -21,7 +21,7 @@ function HeroHeader(props: HeroHeaderProps) {
          }}
          py={4}
       >
-         <Flex alignItems={"center"} justifyContent={"center"} h={"10vh"}>
+         <Flex alignItems={"center"} justifyContent={"center"} maxH={"10vh"}>
             <Stack
                direction={"column"}
                spacing={1}

@@ -3,10 +3,7 @@ import { HomeCards } from "./components/HomeCards";
 import { OurStory } from "./components/OurStory";
 
 import { DividerLine } from "../../components/DividerLine";
-import { ParallaxSlider } from "./components/ParallaxSlider";
 
-import { PARALLAX_ITEM } from "./components/ParallaxSlider";
-import { Divider } from "@chakra-ui/react";
 import { HeroHome } from "./components/HeroHome";
 import { AboutUs } from "./components/AboutUs";
 
@@ -74,9 +71,6 @@ export default function Home() {
                   maiores?
                `}
             />
-            {/* <Divider borderColor={"red.300"} />
-            {PARALLAX_ITEM && <ParallaxSlider parallax={PARALLAX_ITEM} />}
-            <Divider borderColor={"red.300"} /> */}
 
             <HeroHome
                contentOne={content.contentOne}

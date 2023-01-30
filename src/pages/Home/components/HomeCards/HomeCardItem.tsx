@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Flex, Image, Stack, chakra } from "@chakra-ui/react";
+import { Flex, Image, Stack, chakra, Box } from "@chakra-ui/react";
 import { HomeCardsProps } from "./index";
 
 interface HomeCardItemProps {
@@ -13,22 +13,26 @@ function HomeCardItem({ homeCards }: HomeCardItemProps) {
       <Flex
          as={"article"}
          bg={"whiteAlpha.400"}
+         basis={52}
+         flexGrow={1}
+         flexShrink={1}
          flexDir={"column"}
-         basis={"15rem"}
+         align={"center"}
          shadow={"lg"}
          rounded={"lg"}
-         align={"center"}
-         p={2}
-         border={"0.215rem solid"}
+         p={4}
+         border={"2px solid"}
          borderColor={"brown.200"}
          transition={"all 0.4s ease-out"}
          _hover={{
             transform: "translateY(-3px)",
          }}
       >
-         <Image src={image} alt={""} fit={"cover"} boxSize={40} />
+         <Box>
+            <Image src={image} alt={description} fit={"cover"} boxSize={36} />
+         </Box>
 
-         <Stack py={5} textAlign="center">
+         <Stack py={5} textAlign={"center"}>
             <chakra.span fontSize={"3xl"} color={"gray.700"}>
                {description}
             </chakra.span>

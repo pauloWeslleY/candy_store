@@ -1,16 +1,16 @@
 import PageHead from "../Head";
 import { NavBar } from "../../components/NavBar";
-import Contact from "./Contact";
+import PageCakes from "./Cakes";
 
-export default function ContactMe() {
+export default function Cakes() {
    return (
       <>
-         <PageHead title="Contatos" description="Pagina de Contatos" />
+         <PageHead title="Bolos" description="Pagina Bolos" />
          <nav>
             <NavBar />
          </nav>
 
-         <Contact />
+         <PageCakes />
       </>
    );
 }

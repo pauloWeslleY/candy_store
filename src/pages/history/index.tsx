@@ -6,7 +6,7 @@ import { NavBar } from "../../components/NavBar";
 export default function History() {
    return (
       <>
-         <PageHead title="Nossa Historia" description="Pagina Principal" />
+         <PageHead title="Nossa História" description="Pagina Nossa História" />
          <nav>
             <NavBar />
          </nav>

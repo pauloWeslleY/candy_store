@@ -6,7 +6,7 @@ import PagePies from "./Pies";
 export default function Pies() {
    return (
       <>
-         <PageHead title="Tortas" description="Pagina Principal" />
+         <PageHead title="Tortas" description="Pagina das Tortas" />
 
          <nav>
             <NavBar />

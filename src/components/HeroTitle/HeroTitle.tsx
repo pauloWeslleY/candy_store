@@ -12,7 +12,7 @@ function HeroTitle(TitleProps: HeroTitleProps) {
 
    return (
       <Flex {...props} flexDir={"column"} align={"center"}>
-         <Heading as={"h2"} size={"2xl"}>
+         <Heading as={"h2"} size={"2xl"} color={"green.100"}>
             {title}
          </Heading>
 

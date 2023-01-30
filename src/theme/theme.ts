@@ -1,5 +1,5 @@
-import { extendTheme, type ThemeConfig, ChakraTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+import { extendTheme, type ThemeConfig } from "@chakra-ui/react";
+import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
 
 //? Include custom option in here... colors, fonts, etc!!
 const config: ThemeConfig = {
@@ -10,7 +10,7 @@ const config: ThemeConfig = {
 export const THEME = extendTheme({
    config,
    styles: {
-      global: (props: any) => ({
+      global: (props: Record<string, any> | StyleFunctionProps) => ({
          body: {
             bg: mode("background2", "background2")(props),
             color: "brown.700",

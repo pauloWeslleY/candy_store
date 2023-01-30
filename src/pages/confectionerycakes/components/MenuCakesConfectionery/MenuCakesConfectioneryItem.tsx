@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Box, Flex, chakra, Image } from "@chakra-ui/react";
+import { Box, Flex, chakra, Image, Badge } from "@chakra-ui/react";
 import { MenuCakesProps } from "./index";
 
 interface MenuCakesItemProps {
@@ -48,9 +48,15 @@ function MenuCakesConfectioneryItem({ cakes }: MenuCakesItemProps) {
                      base: "2xl",
                      md: "xl",
                   }}
-                  color={"brown.300"}
+                  color={"brown.400"}
                >
-                  .......${price}
+                  <Badge
+                     variant={"subtle"}
+                     colorScheme={"white"}
+                     fontSize={"lg"}
+                  >
+                     .......${price}
+                  </Badge>
                </chakra.span>
             </Flex>
             <chakra.p mt={4} color={"gray.400"}>

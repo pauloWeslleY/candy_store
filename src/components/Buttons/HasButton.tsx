@@ -25,9 +25,6 @@ function HasButton(BtnProps: HasButtonProps) {
             transform: "rotate(2deg)",
             border: "2px solid var(--green-300)",
          }}
-         _focus={{
-            bg: "red.300",
-         }}
       >
          {name}
       </Button>

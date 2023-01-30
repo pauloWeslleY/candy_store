@@ -1,4 +1,3 @@
-import { BannerHome } from "./components/BannerHome";
 import { HomeCards } from "./components/HomeCards";
 import { OurStory } from "./components/OurStory";
 
@@ -38,20 +37,6 @@ export default function Home() {
 
    return (
       <main>
-         <section>
-            <BannerHome
-               title="All your"
-               label="in one single place."
-               subLabel="customer feedback"
-               subtitle={`
-                  Hellonext is a feature voting software where you can allow
-                  your users to vote on features, publish roadmap, and complete
-                  your customer feedback loop.
-               `}
-               id={"HomeCards"}
-            />
-         </section>
-
          <DividerLine />
 
          <section>

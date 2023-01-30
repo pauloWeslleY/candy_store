@@ -6,7 +6,10 @@ import { NavBar } from "../../components/NavBar";
 export default function TraditionalCakes() {
    return (
       <>
-         <PageHead title="Bolos Tradicionais" description="Pagina Principal" />
+         <PageHead
+            title="Bolos Tradicionais"
+            description="Pagina dos Bolos Tradicionais"
+         />
          <nav>
             <NavBar />
          </nav>

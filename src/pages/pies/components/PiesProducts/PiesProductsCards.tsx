@@ -7,10 +7,10 @@ export function PiesProductsCards() {
          flexBasis={"20rem"}
          flexGrow={1}
          flexShrink={1}
+         flexDir={"column"}
+         justify={"center"}
+         align={"center"}
          m={"1rem"}
-         direction={"column"}
-         justifyContent={"center"}
-         alignItems={"center"}
       >
          <Box
             h={64}

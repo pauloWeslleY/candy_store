@@ -3,7 +3,7 @@ import { BannerCakes } from "./components/BannerCakes";
 import { CakeSlide } from "./components/CakesSlide";
 import { GiCakeSlice } from "react-icons/gi";
 
-import { HOME_CARDS } from "../Home/components/HomeCards";
+import { HOME_CARDS } from "../../components/Pages/Home/HomeCards";
 
 export default function PageCakes() {
    return (

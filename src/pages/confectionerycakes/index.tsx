@@ -1,5 +1,5 @@
 import PageHead from "../Head";
-import ConfectioneryCakesPage from "./ConfectioneryCakes";
+import ConfectioneryCakesPage from "../../templates/ConfectioneryCakes/ConfectioneryCakes";
 
 import { NavBar } from "../../components/NavBar";
 

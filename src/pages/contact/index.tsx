@@ -1,6 +1,6 @@
 import PageHead from "../Head";
 import { NavBar } from "../../components/NavBar";
-import Contact from "./Contact";
+import Contact from "../../templates/Contact/Contact";
 
 export default function ContactMe() {
    return (

@@ -1,6 +1,6 @@
 import PageHead from "../Head";
 import { NavBar } from "../../components/NavBar";
-import PageCakes from "./Cakes";
+import PageCakes from "../../templates/Cakes/Cakes";
 
 export default function Cakes() {
    return (

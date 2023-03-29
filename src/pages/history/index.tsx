@@ -1,5 +1,5 @@
 import PageHead from "../Head";
-import HistoryPage from "./History";
+import HistoryPage from "../../templates/History/History";
 
 import { NavBar } from "../../components/NavBar";
 

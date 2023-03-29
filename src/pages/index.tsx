@@ -1,11 +1,10 @@
 import Home from "./Home";
-
 import PageHead from "./Head";
 
 import { NavBar } from "../components/NavBar";
+import { BannerHome } from "../components/Pages/Home/BannerHome";
 
 import styles from "../scss/app.module.scss";
-import { BannerHome } from "./Home/components/BannerHome";
 
 export default function MyHome() {
    return (
@@ -23,10 +22,10 @@ export default function MyHome() {
                   label="in one single place."
                   subLabel="customer feedback"
                   subtitle={`
-                  Hellonext is a feature voting software where you can allow
-                  your users to vote on features, publish roadmap, and complete
-                  your customer feedback loop.
-               `}
+                     Hellonext is a feature voting software where you can allow
+                     your users to vote on features, publish roadmap, and complete
+                     your customer feedback loop.
+                  `}
                   id={"HomeCards"}
                />
             </header>

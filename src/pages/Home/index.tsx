@@ -1,5 +1,5 @@
-import { HomeCards } from "./components/HomeCards";
-import { OurStory } from "./components/OurStory";
+import { HomeCards } from "../../components/Pages/Home/HomeCards";
+import { OurStory } from "../../components/Pages/Home/OurStory";
 
 import { DividerLine } from "../../components/DividerLine";
 

@@ -28,7 +28,7 @@ function HomeCards(props: HomeCardsProps) {
 
             <Flex gap={4} flexWrap={"wrap"} justify={"center"} mb={14}>
                {HOME_CARDS.map((card, index) => (
-                  <HomeCardItem key={index} homeCards={card} />
+                  <HomeCardItem key={`${card}${index}`} homeCards={card} />
                ))}
                <HasButton
                   name="Conheça Nossos Produtos"

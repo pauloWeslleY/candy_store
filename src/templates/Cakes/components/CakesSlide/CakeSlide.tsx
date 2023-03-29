@@ -5,7 +5,7 @@ import {
    Slide,
    SliderProps,
 } from "../../../../components/Slider";
-import { ImageCard, HomeCardsProps } from "./index";
+import { CardsImage, HomeCardsProps } from "./index";
 
 interface ICardsSliderProps {
    cards: HomeCardsProps[];
@@ -43,16 +43,16 @@ function CakeSlide({ cards }: ICardsSliderProps) {
    if (cards.length === 1) {
       return (
          <Center>
-            <ImageCard />
+            <CardsImage cards={cards[0]} />
          </Center>
       );
    }
 
    return (
       <SliderCarousel settings={settings} css={{ padding: "3.2rem" }}>
-         {cards.map((_, index) => (
+         {cards.map((cards, index) => (
             <Slide key={index}>
-               <ImageCard />
+               <CardsImage cards={cards} />
             </Slide>
          ))}
       </SliderCarousel>

@@ -6,8 +6,9 @@ import {
    VStack,
    useBreakpointValue,
 } from "@chakra-ui/react";
-import { ButtonBanner } from "../../../../components/Buttons";
 import { ImArrowRight2 } from "react-icons/im";
+
+import { ButtonBanner } from "./index";
 
 function BannerCakes() {
    return (

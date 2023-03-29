@@ -1,7 +1,7 @@
 import CakeSlide from "./CakeSlide";
-import ImageCard from "./ImageCard";
+import CardsImage from "./CardsImage";
 
 import { HomeCardsProps } from "../../../../types/HomeCardsProps";
 
-export { CakeSlide, ImageCard };
+export { CakeSlide, CardsImage };
 export type { HomeCardsProps };

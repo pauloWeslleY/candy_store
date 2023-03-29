@@ -1,8 +1,8 @@
 import { Box, Container, Heading, Stack, Text, Icon } from "@chakra-ui/react";
-import { BannerCakes } from "./components/BannerCakes";
-import { CakeSlide } from "./components/CakesSlide";
 import { GiCakeSlice } from "react-icons/gi";
 
+import { BannerCakes } from "./components/BannerCakes";
+import { CakeSlide } from "./components/CakesSlide";
 import { HOME_CARDS } from "../../components/Pages/Home/HomeCards";
 
 export default function PageCakes() {

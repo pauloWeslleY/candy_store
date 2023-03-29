@@ -1,10 +1,9 @@
 import { HomeCards } from "../../components/Pages/Home/HomeCards";
 import { OurStory } from "../../components/Pages/Home/OurStory";
+import { HeroHome } from "../../components/Pages/Home/HeroHome";
+import { AboutUs } from "../../components/Pages/Home/AboutUs";
 
 import { DividerLine } from "../../components/DividerLine";
-
-import { HeroHome } from "./components/HeroHome";
-import { AboutUs } from "./components/AboutUs";
 
 type contentProps = {
    contentOne: {

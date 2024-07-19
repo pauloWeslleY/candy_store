@@ -10,6 +10,10 @@ import { SOCIAL_ICON } from "./[nav_items_props]/[nav_social_icons]";
 import { NavItemProps } from "../../types/NavItemProps";
 import { SocialButtonProps } from "../../types/SocialButtonIconProps";
 
+import { ButtonOrder } from "../Buttons";
+
+
+
 export {
    NavBar,
    MenuNav,
@@ -19,5 +23,6 @@ export {
    SocialButton,
    NAV_ITEMS,
    SOCIAL_ICON,
+   ButtonOrder
 };
 export type { NavItemProps, SocialButtonProps };

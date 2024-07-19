@@ -10,8 +10,7 @@ import {
    Divider,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { MenuNav, MobileNav, SocialButton } from "./index";
-import ButtonOrder from "../Buttons/ButtonOrder";
+import { MenuNav, MobileNav, SocialButton, ButtonOrder } from "./index";
 
 function NavBar() {
    const { isOpen, onToggle } = useDisclosure();

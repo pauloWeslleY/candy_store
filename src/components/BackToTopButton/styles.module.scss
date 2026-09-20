@@ -1,0 +1,40 @@
+.backToTopButton {
+   background: var(--brown-500);
+   color: var(--green-100);
+
+   clip-path: circle();
+   font-size: 1.5rem;
+   padding: 0.2rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: fixed;
+   bottom: 1.25rem;
+   right: 1.25rem;
+   height: 3.125rem;
+   width: 2.5rem;
+
+   z-index: 5;
+
+   animation: backToTopAnimation 5s ease-in-out infinite alternate;
+   transition: all 0.7s ease-in-out;
+
+   &:hover {
+      background: var(--green-300);
+      color: var(--brown-500);
+   }
+}
+
+@keyframes backToTopAnimation {
+   0% {
+      transform: translateY(-10px);
+   }
+   50% {
+      transform: translateY(10px);
+   }
+   100% {
+      transform: translateY(-10px);
+   }
+}
